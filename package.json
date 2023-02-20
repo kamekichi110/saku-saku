@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "minecraft-bedrock-server": "^1.1.2"
+  }
+}
