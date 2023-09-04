@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "kalidokit": "^1.1.5",
     "minecraft-bedrock-server": "^1.1.2"
   }
 }
