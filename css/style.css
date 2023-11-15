@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Yomogi&display=swap');
+body {
+    background: black;
+    font-family: 'Yomogi', cursive;
+  }
+  header {
+    background: lightgreen;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    color: grey;
+    font-family: 'Rampart%20One', sans-serif;
+  }
+  img.icon {
+    height: 100%;
+    border-radius: 12px;
+  }
+  article {
+    width: 100%;
+    min-height: 960px;
+    background: #ffd692;
+  }
+  footer {
+    width: 100%;
+    height: 75px;
+    background: darkgreen;
+    color: white;
+    position: sticky;
+    bottom: 0px;
+    text-align: right;
+  }
+  img.sns-icon {
+    height: 75px;
+  }  
