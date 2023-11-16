@@ -23,3 +23,7 @@ window.addEventListener('load', function () {
       var loadingContainer = document.getElementById('loadingContainer');
       loadingContainer.style.display = 'none';
     });
+
+    function topPage() {
+        window.location.href = "https://si-kuma.f5.si/"
+    }
