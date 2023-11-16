@@ -208,6 +208,6 @@ details[open] {
   }
 }
 section:hover {
-  border-color: green;
-  border-radius: 1.5%;
+  border-radius: 12px;
+  border: green dotted 1.5%;
 }
