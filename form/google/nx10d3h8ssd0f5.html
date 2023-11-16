@@ -8,6 +8,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"><link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="https://si-kuma.f5.si/style.css">
 <link rel="shortcut icon" href="https://si-kuma.f5.si/img/favicon.ico" type="image/x-icon">
+<style>
+  video {
+    width: 320px;
+    aspect-ratio: 16/9;
+  }
+</style>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -34,9 +40,22 @@
     <section id="section2" class="section">
       <form action="https://docs.google.com/forms/d/e/1FAIpQLSfeHlViarHS3Id5NRK348aUoFLMaZ4UTk5Gi9RZLkOyRNpIHg/formResponse">
         <h5>動画を見る際、気をつけていることを<br>1つ入力してください</h5>
-        <input type="text" name="entry.1227446914" id="section1">
+        <input placeholder="入力してください" type="text" name="entry.1227446914" id="section1">
         <br>
         <hr>
+        <h2>このの二つの動画を<br>みてください。</h2>
+        <br>
+        <p>パターン1</p>
+        <p>
+          <video src="./mp4/mv-1.mp4" controls preload="auto"></video>
+        </p>
+        <hr>
+        <p>
+          パターン2
+        </p>
+        <p>
+          <video src="./mp4/mv-2.mp4" controls preload="auto"></video>
+        </p>
         <br>
         <br>
         <hr>
