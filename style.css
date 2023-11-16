@@ -184,6 +184,10 @@ details[open] {
   animation-iteration-count: infinite;
   width: 256px;
 }
+.my-icon {
+  border-radius: 128px;
+  border: green dotted 8px;
+}
 @keyframes icons-animation {
   0% {
     transform: rotate(-6deg);
