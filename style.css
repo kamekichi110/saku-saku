@@ -74,6 +74,7 @@ body {
     margin: 20px 0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 96%;
 }
 
 .footer {
@@ -205,4 +206,8 @@ details[open] {
     transform: rotate(-6deg);
     top: 14px;
   }
+}
+section:hover {
+  border-color: green;
+  border-radius: 1.5%;
 }
