@@ -185,7 +185,7 @@ details[open] {
   width: 256px;
 }
 .my-icon {
-  border-radius: 128px;
+  border-radius: 256px;
   border: green dotted 8px;
 }
 @keyframes icons-animation {
