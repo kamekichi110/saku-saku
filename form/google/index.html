@@ -26,7 +26,7 @@
     <button class="toggle-btn">&#9776;</button>
 </header>
 <main>
-    <section id="section1" class="section">
+    <section id="section0" class="section">
       <h2>アンケート</h2>
       <p>アンケートを取ります。</p>
       <p>Google formを使用しております。</p>
@@ -34,7 +34,7 @@
     <section id="section2" class="section">
       <form action="https://docs.google.com/forms/d/e/1FAIpQLSfeHlViarHS3Id5NRK348aUoFLMaZ4UTk5Gi9RZLkOyRNpIHg/formResponse">
         <h5>動画を見る際、気をつけていることを<br>1つ入力してください</h5>
-        <input type="text" name="entry.1227446914" id="section1" onchange="answer()">
+        <input type="text" name="entry.1227446914" id="section1">
         <br>
         <hr>
         <br>
@@ -42,12 +42,27 @@
         <hr>
         <br>
         <h5>2つの動画のうちどっちが印象に残りましたか？</h5>
-        <input type="radio" name="entry.1840951448" id="section21" value="パターン1">
-        <input type="radio" name="entry.1840951448" id="section22" value="パターン2">
+        <input type="radio" name="entry.1840951448" id="section21" value="パターン1" onclick="select(1)">
+        <input type="radio" name="entry.1840951448" id="section22" value="パターン2" onclick="select(2)">
         <br>
+        <div class="readme">
+          <h2>情報の取り扱いについて</h2>
+          <p>当フォームはGoogle formを<br>使用して作成されています。<br>文字入力式の解答欄には<br>質問内容に対する答えを<br>書いてください。<br></p>
+          <button type="button" onclick="readme()" id="readmeBtn"></button>
+        </div>
+        <div>
+          <p>問1:</p>
+          <p id="result1"></p>
+          <p>問2:<span id="result2"></span></p>
+        </div>
+        <p>以上の内容で送信されますので</p>
+        <p>ご注意ください。</p>
+        <button type="submit" disabled id="sendBtn">回答を送信</button>
       </form>
     </section>
     <section id="section3" class="section">
+      <p>このフォームはGoogle formを<br>元に作っております。
+      </p>
     </section>
 </main>
 
@@ -64,6 +79,30 @@
 </footer>
 <!-- partial -->
   <script  src="https://si-kuma.f5.si/script.js"></script>
-
+<script>
+  const readmeBtn = document.getElementById("readmeBtn");
+  const sendBtn = document.getElementById("sendBtn");
+  const result1 = document.getElementById("result1");
+  const result2 = document.getElementById("result3");
+  const section1 = document.getElementById("section1");
+  const section21 = document.getElementById("section21");
+  const section22 = document.getElementById("section22");
+  function readme() {
+    readmeBtn.disabled = true;
+    sendBtn.disabled = false;
+  }
+  function select(num) {
+    if (section1 === "") {
+      window.alert("入力エリアに答えを入力してください")
+    } else {
+      result1.innerHTML = section1.value;
+    }
+    if (num === 1) {
+      result2.innerHTML = section21.value;
+    } else if (num === 2) {
+      result2.innerHTML = section22.value;
+    }
+  }
+</script>
 </body>
 </html>
