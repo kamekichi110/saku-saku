@@ -177,3 +177,31 @@ details[open] {
     transform: rotate(360deg);
   }
 }
+.sns-icons, .my-icon {
+  animation-duration: 3s;
+  animation-name: icons-animation;
+  animation-iteration-count: infinite;
+  width: 256px;
+}
+@keyframes icons-animation {
+  0% {
+    transform: rotate(-6deg);
+    top: 14px;
+  }
+  25% {
+    transform: rotate(6deg);
+    top: -14px;
+  }
+  50% {
+    transform: rotate(-6deg);
+    top: 14px;
+  }
+  75% {
+    transform: rotate(6deg);
+    top: -14px;
+  }
+  100% {
+    transform: rotate(-6deg);
+    top: 14px;
+  }
+}
