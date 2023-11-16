@@ -8,6 +8,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"><link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="https://si-kuma.f5.si/style.css">
 <link rel="shortcut icon" href="https://si-kuma.f5.si/img/favicon.ico" type="image/x-icon">
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "5a94972b-8528-4759-bd3a-179d34fb72fe",
+    });
+  });
+</script>
+<link rel="manifest" href="/manifest.json">
+<script src="/app.js"></script>
 </head>
 <body>
 <!-- partial:index.partial.html -->

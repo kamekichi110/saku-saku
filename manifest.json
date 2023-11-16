@@ -1,0 +1,18 @@
+{
+ "name": "しーくまの部屋",
+ "short_name": "しーくまの部屋",
+ "start_url": "https://si-kuma.f5.si",
+ "description": "",
+ "display": "standalone",
+ "orientation": "any",
+ "theme_color": "#3BB343",
+ "background_color": "#5E9954",
+ "icons": [
+  {
+   "src": "https://si-kuma.f5.si/img/favicon.ico",
+   "sizes": "256x256",
+   "type": "image/vnd.microsoft.icon"
+  }
+ ],
+ "scope": "https://si-kuma.f5.si"
+}
