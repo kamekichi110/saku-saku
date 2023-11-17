@@ -30,26 +30,4 @@ window.addEventListener('load', function () {
 
 
     
-    const images = [
-        'bg/image1.jpeg',
-        'bg/image2.jpeg',
-        'bg/image3.jpeg',
-        'bg/image4.jpeg'
-        // 追加の画像パスを必要な数だけ追加
-      ];
-      let index = 0;
-      
-      function changeBackground() {
-        document.body.style.opacity = 0; // フェードアウト
-        setTimeout(function() {
-          document.body.style.backgroundImage = `url(${images[index]})`;
-          index = (index + 1) % images.length;
-          document.body.style.opacity = 1; // フェードイン
-        }, 1000); // フェードアウトの1秒後に切り替えとフェードインを行う
-      }
-      
-      setInterval(changeBackground, 5000); // 5秒ごとに背景画像を切り替える
-      
-      // 初期背景画像の設定（必要に応じて）
-      document.body.style.backgroundImage = `url(${images[index]})`;
       

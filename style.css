@@ -4,15 +4,11 @@ html {
 }
 /* リセットと共通スタイル */
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f3f3f3;
     color: #333;
-      margin: 0;
-      padding: 0;
-      background-size: cover;
-      background-position: center center; /* 背景画像を中央に配置 */
-      background-repeat: no-repeat; /* 背景画像を繰り返し表示しない */
-      background-attachment: fixed; /* 背景画像を固定 */  
 }
 
 .header {
@@ -23,7 +19,6 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0px;
-  z-index: 10000;
 }
 
 .navbar {
@@ -181,40 +176,4 @@ details[open] {
   100% {
     transform: rotate(360deg);
   }
-}
-.sns-icons, .my-icon {
-  animation-duration: 3s;
-  animation-name: icons-animation;
-  animation-iteration-count: infinite;
-  width: 256px;
-}
-.my-icon {
-  border-radius: 256px;
-  border: green dotted 8px;
-}
-@keyframes icons-animation {
-  0% {
-    transform: rotate(-6deg);
-    top: 14px;
-  }
-  25% {
-    transform: rotate(6deg);
-    top: -14px;
-  }
-  50% {
-    transform: rotate(-6deg);
-    top: 14px;
-  }
-  75% {
-    transform: rotate(6deg);
-    top: -14px;
-  }
-  100% {
-    transform: rotate(-6deg);
-    top: 14px;
-  }
-}
-section:hover {
-  border-radius: 12px;
-  border: green dotted 1.5%;
 }
