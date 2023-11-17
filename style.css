@@ -177,9 +177,10 @@ details[open] {
     transform: rotate(360deg);
   }
 }
-.my-icon, .sns-icon {
-  width: 30%;
-}
 .my-icon {
+  width: 30%;
   border-radius: 1000px;
+}
+.sns-icons {
+  width: 30%;
 }
