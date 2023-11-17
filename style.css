@@ -178,9 +178,9 @@ details[open] {
   }
 }
 .my-icon {
-  width: 30%;
-  border-radius: 1000px;
+  width: 256px;
+  border-radius: 256px;
 }
-.sns-icons {
-  width: 30%;
+img.sns-icons {
+  width: 256px;
 }
