@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="loading-container" id="loadingContainer">
+        <div class="loader"></div>
+      </div>
+    <header class="header">
+        <nav class="navbar">
+          <h1>しーくまの部屋</h1>
+          <h3>-コメントフォーム-</h3>
+            <ul>
+                <li><a href="https://si-kuma.f5.si/">top</a></li>
+                <li><a href="https://si-kuma.f5.si/form/index.html#section2">News</a></li>
+                <li><a href="https://si-kuma.f5.si/form/video/">限定公開動画</a></li>
+            </ul>
+        </nav>
+        <img src="https://si-kuma.f5.si/img/icon.png" alt="Icon" class="header-icon">
+        <button class="toggle-btn">&#9776;</button>
+    </header>
+    <main>
+        <section id="section1" class="section">
+            <form id="myForm" action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSdVeBtgWVf4UPO7LowxLEuJe-fBTfcwlymvdGSRszwcqJ4cpw/formResponse" method="post">
+                <h4>コメントの種類</h4>
+                <input type="radio" id="question" name="entry.876330838" value="質問">
+                <label for="question">質問</label><br>
+            
+                <input type="radio" id="comment" name="entry.876330838" value="コメント">
+                <label for="comment">ただのコメント</label><br>
+            
+                <input type="radio" id="request" name="entry.876330838" value="依頼">
+                <label for="request">依頼</label><br><br>
+            <h4>コメントの内容を入力</h4>
+                <textarea id="textAreaEntry" name="entry.1930203722" placeholder="文字を入力"></textarea><br><br>
+            
+                <input type="checkbox" id="checkboxEntry" name="entry.1305518882">
+                <label for="checkboxEntry">送信しますか？</label><br><br>
+            
+                <input type="submit" id="submitButton" value="Submit" disabled>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://twitter.com/si_kuma8170" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@si-kuma" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <p>&copy; 2023 si-kuma. All rights reserved.</p>
+    </footer>
+    <script>
+        // チェックボックス要素を取得
+        const checkbox = document.getElementById('checkboxEntry');
+        // ラジオボタン要素を取得
+        const radioButtons = document.querySelectorAll('input[name="entry.876330838"]');
+        // テキストエリア要素を取得
+        const textArea = document.getElementById('textAreaEntry');
+        // Submitボタン要素を取得
+        const submitButton = document.getElementById('submitButton');
+        // フォーム要素を取得
+        const form = document.getElementById('myForm');
+    
+        // チェックボックスの状態とラジオボタンの選択状態を監視して、Submitボタンを制御する
+        function checkValidity(event) {
+          event.preventDefault(); // フォームのデフォルトの送信をキャンセルする
+    
+          let checkboxChecked = checkbox.checked;
+          let radioChecked = false;
+          let textAreaFilled = textArea.value.trim() !== ''; // テキストエリアが空でないか確認する
+    
+          // ラジオボタンが選択されているか確認する
+          radioButtons.forEach(function(radioButton) {
+            if (radioButton.checked) {
+              radioChecked = true;
+            }
+          });
+    
+          // チェックボックスと少なくとも1つのラジオボタンが選択されていて、テキストエリアが空でなければフォームを送信する
+          if (checkboxChecked && radioChecked && textAreaFilled) {
+            form.submit(); // 条件が満たされていればフォームを送信する
+          } else {
+            alert("ラジオボタンを選択し、テキストエリアに文字を入力してください。"); // 条件が満たされていない場合はアラートを表示する
+          }
+        }
+    
+        // Submitボタンがクリックされたときの処理
+        form.addEventListener('submit', checkValidity);
+      </script>
+</body>
+</html>
