@@ -178,8 +178,8 @@ details[open] {
   }
 }
 .my-icon, .sns-icon {
-  width: 100%;
+  width: 50%;
 }
 .my-icon {
-  border-radius: 100%;
+  border-radius: 1000px;
 }
