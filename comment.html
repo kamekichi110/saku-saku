@@ -27,7 +27,7 @@
     </header>
     <main>
         <section id="section1" class="section">
-            <form id="myForm" action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSdVeBtgWVf4UPO7LowxLEuJe-fBTfcwlymvdGSRszwcqJ4cpw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+            <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSdVeBtgWVf4UPO7LowxLEuJe-fBTfcwlymvdGSRszwcqJ4cpw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
                 <h4>コメントの種類</h4>
                 <select name="entry.876330838" required>
                   <option value="質問">質問</option>
@@ -56,45 +56,7 @@
         <p>&copy; 2023 si-kuma. All rights reserved.</p>
     </footer>
     <script>
-        // チェックボックス要素を取得
-        const checkbox = document.getElementById('checkboxEntry');
-        // ラジオボタン要素を取得
-        const radioButtons = document.querySelectorAll('input[name="entry.876330838"]');
-        // テキストエリア要素を取得
-        const textArea = document.getElementById('textAreaEntry');
-        // Submitボタン要素を取得
-        const submitButton = document.getElementById('submitButton');
-        // フォーム要素を取得
-        const form = document.getElementById('myForm');
-    
-        // チェックボックスの状態とラジオボタンの選択状態を監視して、Submitボタンを制御する
-        function checkValidity(event) {
-          event.preventDefault(); // フォームのデフォルトの送信をキャンセルする
-    
-          let checkboxChecked = checkbox.checked;
-          let radioChecked = false;
-          let textAreaFilled = textArea.value.trim() !== ''; // テキストエリアが空でないか確認する
-    
-          // ラジオボタンが選択されているか確認する
-          radioButtons.forEach(function(radioButton) {
-            if (radioButton.checked) {
-              radioChecked = true;
-            }
-          });
-    
-          // チェックボックスと少なくとも1つのラジオボタンが選択されていて、テキストエリアが空でなければフォームを送信する
-          if (checkboxChecked && radioChecked && textAreaFilled) {
-            form.submit(); // 条件が満たされていればフォームを送信する
-          } else {
-            alert("ラジオボタンを選択し、テキストエリアに文字を入力してください。"); // 条件が満たされていない場合はアラートを表示する
-          }
-        }
-    
-        // Submitボタンがクリックされたときの処理
-        form.addEventListener('submit', checkValidity);
-
         let submitted = false;
-
     const page_transition = function () {
         if(submitted){
             window.location = 'thanks.html';
