@@ -179,7 +179,7 @@ details[open] {
 }
 .my-icon {
   width: 256px;
-  border-radius: 256px;
+  border-radius: 100px;
 }
 img.sns-icons {
   width: 256px;
