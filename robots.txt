@@ -1,0 +1,1 @@
+sitemap: http://si-kuma.f5.si/sitemap/sitemap.xml
