@@ -27,7 +27,7 @@
     </header>
     <main>
         <section id="section1" class="section">
-            <form id="myForm" action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSdVeBtgWVf4UPO7LowxLEuJe-fBTfcwlymvdGSRszwcqJ4cpw/formResponse" method="post">
+            <form id="myForm" action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSdVeBtgWVf4UPO7LowxLEuJe-fBTfcwlymvdGSRszwcqJ4cpw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
                 <h4>コメントの種類</h4>
                 <input type="radio" id="question" name="entry.876330838" value="質問" required>
                 <label for="question">質問</label><br>
@@ -95,7 +95,16 @@
     
         // Submitボタンがクリックされたときの処理
         form.addEventListener('submit', checkValidity);
+
+        let submitted = false;
+
+    const page_transition = function () {
+        if(submitted){
+            window.location = 'thanks.html';
+        }
+    }
       </script>
+      <iframe name="hidden_iframe" style="display:none;" onload="page_transition()"></iframe>
       <script src="./script.js"></script>
 </body>
 </html>
