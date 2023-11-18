@@ -1,0 +1,11 @@
+video {
+    width: 96%;
+    border: black solid 2px;
+    margin: 0 auto;
+}
+.video-size43 {
+    aspect-ratio: 4/3;
+}
+.video-size169 {
+    aspect-ratio: 16/9;
+}

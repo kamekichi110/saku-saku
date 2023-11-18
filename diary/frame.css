@@ -1,0 +1,30 @@
+.frame-type0 {
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+.frame-type1 {
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+.frame-type3 {
+    width: 100%;
+    aspect-ratio: 3/2;
+}
+.frame-color1 {
+    border-color: black;
+}
+.frame-color2 {
+    border-color: red;
+}
+.frame-color3 {
+    border-color: yellow;
+}
+.frame-line1 {
+    border-style: solid;
+}
+.frame-line2 {
+    border-style: double;
+}
+.frame-line3 {
+    border-style: dotted;
+}
