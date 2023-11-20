@@ -30,6 +30,7 @@ const comment = document.getElementById("text");
 function chat() {
   img.src = smile;
   comment.innerHTML = chatText.value;
+  chatText.value = "";
   chatText.focus();
   setTimeout(() => {
     img.src = def;
