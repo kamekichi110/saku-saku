@@ -35,6 +35,7 @@ function chat() {
   setTimeout(() => {
     img.src = def;
     comment.innerHTML = "";
+    chatText.focus();
   }, 2000);
 }
 function preset() {
