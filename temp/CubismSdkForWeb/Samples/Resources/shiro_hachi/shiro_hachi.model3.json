@@ -7,6 +7,7 @@
 		],
 		"DisplayInfo": "shiro_hachi.cdi3.json"
 	},
+	"Motions": [],
 	"Groups": [
 		{
 			"Target": "Parameter",
