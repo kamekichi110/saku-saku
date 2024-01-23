@@ -7,7 +7,7 @@
 		],
 		"DisplayInfo": "shiro_hachi.cdi3.json"
 	},
-	"Motions": [
+	"Motions": {
 		"Idle": [
 				{
 					"File": "shiro_hachi_m01.motion3.json",
@@ -22,7 +22,7 @@
 					"FadeOutTime": 0.5
 				}
 		]
-	],
+},
 	"Groups": [
 		{
 			"Target": "Parameter",
