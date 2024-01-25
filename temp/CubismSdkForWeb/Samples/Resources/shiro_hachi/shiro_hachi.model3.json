@@ -5,8 +5,7 @@
 		"Textures": [
 			"shiro_hachi.1024/texture_00.png"
 		],
-		"DisplayInfo": "shiro_hachi.cdi3.json"
-	},
+		"DisplayInfo": "shiro_hachi.cdi3.json",
 	"Motions": {
 		"Idle": [
 				{
@@ -22,6 +21,7 @@
 					"FadeOutTime": 0.5
 				}
 		]
+	}
 },
 	"Groups": [
 		{
