@@ -34,5 +34,15 @@
 			"Name": "EyeBlink",
 			"Ids": []
 		}
+	],
+	"HitAreas": [
+		{
+			"Id": "HitArea",
+			"Name": "Head"
+		},
+		{
+			"Id": "HitArea2",
+			"Name": "Body"
+		}
 	]
 }
