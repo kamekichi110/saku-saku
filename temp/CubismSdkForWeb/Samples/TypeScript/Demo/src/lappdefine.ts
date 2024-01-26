@@ -47,7 +47,9 @@ export const PowerImageName = 'CloseNormal.png';
 export const ModelDir: string[] = [
   'shiro_hachi',
   'shiro_hachi_red',
-  'shiro_hachi_green'
+  'shiro_hachi_green',
+  'shiro_hachi_db',
+  'shiro_hachi_cream'
 ];
 export const ModelDirSize: number = ModelDir.length;
 
