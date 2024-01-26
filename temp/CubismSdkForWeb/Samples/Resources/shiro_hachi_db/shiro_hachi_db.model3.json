@@ -1,11 +1,11 @@
 {
 	"Version": 3,
 	"FileReferences": {
-		"Moc": "shiro_hachi_red.moc3",
+		"Moc": "shiro_hachi_db.moc3",
 		"Textures": [
-			"shiro_hachi_red.1024/texture_00_red.png"
+			"shiro_hachi_db.1024/texture_00_db.png"
 		],
-		"DisplayInfo": "shiro_hachi_red.cdi3.json",
+		"DisplayInfo": "shiro_hachi_db.cdi3.json",
 	"Motions": {
 		"Idle": [
 				{
