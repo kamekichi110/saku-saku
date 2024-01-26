@@ -49,7 +49,9 @@ export const ModelDir: string[] = [
   'shiro_hachi_red',
   'shiro_hachi_green',
   'shiro_hachi_db',
-  'shiro_hachi_cream'
+  'shiro_hachi_cream',
+  'shiro_hachi_y',
+  'shiro_hachi_b'
 ];
 export const ModelDirSize: number = ModelDir.length;
 
