@@ -10,15 +10,15 @@
 		"Idle": [
 				{
 					"File": "shiro_hachi_m01.motion3.json",
-					"FadeInTime": 0.5,
-					"FadeOutTime": 0.5
+					"FadeInTime": 0,
+					"FadeOutTime": 0
 				}
 		],
 		"TapBody": [
 				{
 					"File": "shiro_hachi_m02.motion3.json",
-					"FadeInTime": 0.5,
-					"FadeOutTime": 0.5
+					"FadeInTime": 0,
+					"FadeOutTime": 0
 				}
 		]
 	}
