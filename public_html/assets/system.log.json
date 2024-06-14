@@ -1,3 +1,9 @@
 {
-    "dir": ["./(root)", "./img/"]
+    "dir": ["./(root)", "./img/"],
+    "logs": [
+        {
+            "date": "2024-06-15",
+            "msg": "build site page"
+        }
+    ]
 }

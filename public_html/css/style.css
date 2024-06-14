@@ -4,6 +4,7 @@
 }
 html,body {
     margin: 0;
+    width: 100%;
 }
 h1,h2,h3,h4,h5,h6,p,a,span,ul,li,strong {
     margin: 0;
@@ -14,10 +15,19 @@ header {
     background-color: #008110;
     color: #ffffff;
     display: flex;
+    position: sticky;
+    top: 0px;
+    left: 0px;
 }
 #top-icon {
     width: 75px;
 }
+article {
+    width: 96%;
+    padding: 2%;
+    margin: 0 auto;
+}
 main {
+    width: 100%;
     text-align: center;
 }

@@ -9,9 +9,9 @@ if ("serviceWorker" in navigator) {
             registration.scope
           );
           var VerInfo = checkVer();
-          if(VerInfo === true) {
+          if(VerInfo === "true") {
             console.log('最新バージョンであることを確認しました。');
-          } else if(VerInfo === false) {
+          } else if(VerInfo === "false") {
             window.alert('利用可能なアップデートが\n提供されています。\n更新プログラムを実行します。');
             registration.update();
           }
@@ -36,17 +36,17 @@ function checkVer() {
     var version = versionInfo.ver;
     if(version === jsonDataInfo.version) {
         console.log('最新バージョンをご利用中です。');
-        return true;
+        return "true";
     } else {
         var jsonConverted = JSON.stringify(jsonDataInfo);
         localStorage.setItem('pwa-info', jsonConverted);
         console.log('新しいバージョンが利用可能です。\nバージョンを更新します');
-        return false;
+        return "false";
     }
     } else {
         var jsonConverted = JSON.stringify(jsonDataInfo);
         localStorage.setItem('pwa-info', jsonConverted);
         console.log('最新バージョンをご利用中です。');
-        return true;
+        return "true";
     }
 }
