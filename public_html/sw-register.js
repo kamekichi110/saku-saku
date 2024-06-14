@@ -25,28 +25,26 @@ if ("serviceWorker" in navigator) {
   }
 
 function checkVer() {
-    var jsonDataInfo;
     loadJson('./now-version.json').then(data => {
-        jsonDataInfo = data;
-    })
     var latestVerData = localStorage.getItem('pwa-info');
     if(latestVerData) {
     var versionInfo = JSON.parse(latestVerData);
     console.log(versionInfo);
     var version = versionInfo.ver;
-    if(version === jsonDataInfo.version) {
+    if(version === data.version) {
         console.log('最新バージョンをご利用中です。');
         return "true";
     } else {
-        var jsonConverted = JSON.stringify(jsonDataInfo);
+        var jsonConverted = JSON.stringify(data);
         localStorage.setItem('pwa-info', jsonConverted);
         console.log('新しいバージョンが利用可能です。\nバージョンを更新します');
         return "false";
     }
     } else {
-        var jsonConverted = JSON.stringify(jsonDataInfo);
+        var jsonConverted = JSON.stringify(data);
         localStorage.setItem('pwa-info', jsonConverted);
         console.log('最新バージョンをご利用中です。');
         return "true";
     }
+});
 }

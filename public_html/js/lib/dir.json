@@ -1,0 +1,5 @@
+{
+    "libs": {
+        "newsJS": ["./lib/newsJS/main.sys.js"]
+    }
+}
