@@ -1,1 +1,17 @@
 /* Copyright かめ太の住処 All Right Reserved. */
+* {
+    font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p,a,span,ul,li,strong {
+    margin: 0;
+}
+header {
+    width: 100%;
+    height: 75px;
+    background-color: #008110;
+    color: #ffffff;
+    display: flex;
+}
+#top-icon {
+    width: 75px;
+}

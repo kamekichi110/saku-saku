@@ -8,6 +8,8 @@
     "theme_color": "#008110",
     "categories": ["entertainment", "photo", "games", "social", "utilities"],
     "description": "かめ太の住処のPWA対応版ウェブアプリです。",
+    "orientation": "any",
+    "scope": "./",
     "icons": [
         {
             "src": "assets/img/icon-48x48.png",
