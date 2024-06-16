@@ -11,7 +11,7 @@ header {
     width: 96%;
     height: auto;
     padding: 2%;
-    background: #615E58;
+    background: #36425E;
     color: #ffffff;
 }
 .hd-content {
@@ -25,7 +25,9 @@ header img.icon {
 }
 header ul {
     display: flex;
-    margin:0px;
+    margin: 0px;
+    width: 100%;
+    margin: -20 auto;
 }
 header ul li {
     padding: 8px;
