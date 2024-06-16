@@ -1,0 +1,1 @@
+//Copyright 2024 とぶはちの物置 All Right Reserved.
