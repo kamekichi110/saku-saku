@@ -1,4 +1,3 @@
-const newsTable = document.querySelector('#news');
 
 function loadJson(url) {
     return fetch(url)
@@ -13,14 +12,10 @@ function loadJson(url) {
       });
   }
 
-function loadNews() {
-    var src = './db/news.json';
-    loadJson(src)
-    .then(data => {
-        console.log(data);
-        for(let i = 0; i < data.length; i++) {
-            newsTable.innerHTML += "<p>" + data[i] + "</p>";
-        }
-    });
-}
-loadNews();
+  // JavaScript for hiding the loader
+window.addEventListener('load', function() {
+  const loader = document.getElementById('loader');
+  setTimeout(function() {
+      loader.style.display = 'none';
+  }, 1000); // Adjust the time as needed (here, 1000ms = 1 second)
+});
